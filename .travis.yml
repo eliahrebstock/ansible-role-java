@@ -11,6 +11,8 @@ env:
   - ANSIBLE_REF='ansible~=2.8.0' BASE_IMAGE=debian:stretch
   - ANSIBLE_REF='ansible~=2.9.0' BASE_IMAGE=debian:buster
   - ANSIBLE_REF='ansible~=2.8.0' BASE_IMAGE=debian:buster
+  - ANSIBLE_REF='ansible~=2.9.0' BASE_IMAGE=debian:bullseye
+  - ANSIBLE_REF='ansible~=2.8.0' BASE_IMAGE=debian:bullseye
 
 install:
   - travis_retry pip install --upgrade pip setuptools wheel
