@@ -25,3 +25,4 @@ bouncycastle_artifacts:
 stretch_backports_repository: deb.debian.org
 java_packages_expected_state: present
 java_alternative: "java-1.{{ openjdk_version }}.0-openjdk"
+setup_temurin: false

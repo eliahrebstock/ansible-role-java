@@ -7,6 +7,10 @@
     java_packages: "{{ __java_packages | list }}"
   when: java_packages is not defined
 
+# Setup temurin.
+- include_tasks: setup-temurin.yml
+  when: setup_temurin
+
 # Setup/install tasks.
 - include_tasks: setup-Debian.yml
   when: ansible_os_family == 'Debian'

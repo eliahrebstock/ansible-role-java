@@ -49,6 +49,21 @@ bouncycastle_artifacts:
   - bcprov
 ```
 
+Eclipse Temurin can used by setting
+``` yaml
+setup_temurin: true
+```
+e.g. temurin-17-jdk-amd64
+
+``` yaml
+openjdk_version: 17
+java_packages:
+  - temurin-17-jdk
+java_home: /usr/lib/jvm/temurin-17-jdk-amd64
+java_packages_expected_state: latest
+java_alternative: "temurin-17-jdk-amd64"
+```
+
 
 ## Dependencies
 
