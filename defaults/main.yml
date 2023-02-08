@@ -11,6 +11,8 @@ devsecops_ca_enabled: true
 devsecops_ca:
   - alias: peopledoc-ca
     path: /usr/local/share/ca-certificates/devsecops-ca.crt
+  - alias: peopledoc-ca-2
+    path: /usr/local/share/ca-certificates/devsecops-ca-people-doc-net-02.crt
 app_certificates: []
 ca_certificates_password: "changeit"
 ca_certificates:
